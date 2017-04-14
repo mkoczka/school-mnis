@@ -21,6 +21,7 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <!--[if IE]>
@@ -39,10 +40,10 @@
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="report.html">Report</a>
             </li>
           </ul>
@@ -50,7 +51,90 @@
       </div>
     </nav>
 
+    <section class="container py-5">
+      <br>
+      <br>
+      <br>
+      <h2>Report</h2>
+      <ul class="nav nav-tabs my-5" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#table" role="tab">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#form" role="tab">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#other" role="tab">Messages</a>
+        </li>
+      </ul>
 
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="tab-pane active" id="table" role="tabpanel">
+          <table class="table">
+            <thead>
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Username</th>
+              <th class="text-right">Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+              <td class="text-right">
+                <a href="#"><i class="fa fa-lg fa-fw fa-edit"></i></a>
+                <a href="#"><i class="fa fa-lg fa-fw fa-remove"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+              <td class="text-right">
+                <a href="#"><i class="fa fa-lg fa-fw fa-edit"></i></a>
+                <a href="#"><i class="fa fa-lg fa-fw fa-remove"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+              <td class="text-right">
+                <a href="#"><i class="fa fa-lg fa-fw fa-edit"></i></a>
+                <a href="#"><i class="fa fa-lg fa-fw fa-remove"></i></a>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+          <nav aria-label="...">
+            <ul class="pagination">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Previous</a>
+              </li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="tab-pane" id="form" role="tabpanel">...</div>
+        <div class="tab-pane" id="other" role="tabpanel">...</div>
+      </div>
+    </section>
     
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
