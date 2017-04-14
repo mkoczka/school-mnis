@@ -1,5 +1,7 @@
 # school-mnis
 
+Project is published on heroku - https://school-mnis.herokuapp.com
+
 School project.
 - html 5 website
 - bootstrap 4
